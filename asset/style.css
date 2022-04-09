@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+  }
+body {
+    font-family: Arial;
+    margin: 0;
+  }
+main {
+    display: flex;
+    flex-wrap: wrap;   
+    flex-direction: row;
+  /* Centers along the main axis determined by flex-direction */
+    justify-content: center;
+  /* Centers along the opposite axis */
+    align-items: center;
+    width: 90%;
+  /* Uses the height of the viewport */
+    height: 100vh;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: 2px;
+  }
+header {
+    color:darkorchid;
+    font-size: 20px;
+    border-style: solid;
+    border-radius: 5px;
+}
+  .card {
+    flex: 1 0 0;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    margin: 10px;
+    width: 33%;
+  } 
+.card-content {
+    display: flex;
+    flex-direction: column;
+}
+  /* Large smartphones - navbar changes color */
+@media screen and (max-width: 768px) {
+    main {
+        background-color: #bb8588;
+        width: 50%
+    }
+  }
+  
+  /* Small smartphones - image placeholders change color */
+@media screen and (max-width: 576px) {
+    main {
+      background-color: #8ac4ff;
+      width: 100%
+    }
+  }
